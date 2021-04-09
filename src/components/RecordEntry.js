@@ -15,6 +15,7 @@ function RecordEntry() {
       }
 
     return (
+        <div className="container-fluid">
         <div className='row'>
             <div className='col-sm'></div>
             <div className='col-sm'>
@@ -57,6 +58,7 @@ function RecordEntry() {
             </form>
             </div>
             <div className='col-sm'></div>
+        </div>
         </div>
     )
 }

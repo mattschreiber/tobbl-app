@@ -11,13 +11,15 @@ function Home() {
     // const [division] = useState('');
 
     return (
+        <div className="container-fluid">
         <div className='row'>
-            <div className='col'>
+            <div className='col-lg'>
                 <Standings props = {teamObj} division = "Black" />
             </div>
-            <div className='col'>
+            <div className='col-lg'>
                 <Standings props = {teamObj} division = "Red" />
             </div>
+        </div>
         </div>
     )
 }

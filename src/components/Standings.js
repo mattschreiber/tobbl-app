@@ -9,7 +9,7 @@ function Standings(props) {
     
     return (
         <div className='row'>
-            <div className='col'>
+            <div className='col-12'>
                 <h3 className={props.division === 'Red' ? styles[1].color : styles[0].color}>{props.division} Division</h3>
                 <table className='table table-striped'>
                     <thead>
