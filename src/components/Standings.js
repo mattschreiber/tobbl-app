@@ -8,7 +8,7 @@ function Standings(props) {
     const [styles] = useState([{color: 'black'}, {color: 'red'}]);
     
     return (
-        <div className='row'>
+        <div className='row mt-5'>
             <div className='col-12'>
                 <h3 className={props.division === 'Red' ? styles[1].color : styles[0].color}>{props.division} Division</h3>
                 <table className='table table-striped'>
