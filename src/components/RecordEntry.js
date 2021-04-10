@@ -18,7 +18,7 @@ function RecordEntry() {
         <div className="container-fluid">
         <div className='row'>
             <div className='col-sm'></div>
-            <div className='col-sm'>
+            <div className='col-sm-6'>
             <form onSubmit={handleSubmit}>
                 <div className={'form-group'}>
                     <label htmlFor='period'>Period:</label>
