@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 import Login from './Login';
 import Home from './views/Home';
@@ -20,16 +20,16 @@ const Nav = () => (
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">
-      <li className="nav-item active">
-        <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+      <li className="nav-item">
+        <NavLink exact className="nav-link" to="/" activeClassName="active">Home <span className="sr-only">(current)</span></NavLink>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/record-entry">Enter Score</Link>
+        <NavLink className="nav-link" activeClassName="active" to="/record-entry">Enter Score</NavLink>
       </li>
     </ul>
     <ul className="navbar-nav ml-auto">
     <li className="nav-item">
-        <Link className="nav-link" to="/login">Login</Link>
+        <NavLink className="nav-link" activeClassName="active" to="/login">Login</NavLink>
       </li>
     </ul>
   </div>
