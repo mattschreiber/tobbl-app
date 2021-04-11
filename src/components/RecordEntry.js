@@ -21,6 +21,10 @@ function RecordEntry() {
         e.preventDefault();
         console.log(team1, team2);
 
+        if (score1 === 0 && score2 === 0){
+            return
+        }
+
         scoreObj.unshift({period: period, team1: team1, score1: score1, team2: team2, score2: score2});
         setScore1(0);
         setScore2(0); 
