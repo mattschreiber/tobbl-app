@@ -19,13 +19,12 @@ function RecordEntry() {
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(team1, team2);
 
         if (score1 === 0 && score2 === 0){
             return
         }
 
-        scoreObj.unshift({period: period, team1: team1, score1: score1, team2: team2, score2: score2});
+        scoreObj.unshift({period: parseInt(period), team1: team1, score1: parseInt(score1), team2: team2, score2: parseInt(score2)});
         setScore1(0);
         setScore2(0); 
       }
@@ -39,7 +38,7 @@ function RecordEntry() {
             <div className='form-row'>
                 <div className={'form-group col-lg-6'}>
                     <label htmlFor='period'>Period:</label>
-                    <input type='text' id='period' className={'form-control'} value={period} onChange={e => setPeriod(e.target.value)} />
+                    <input required type='text' id='period' className={'form-control'} value={period} onChange={e => setPeriod(e.target.value)} />
                 </div>
             </div>
                 <div className='form-row'>
