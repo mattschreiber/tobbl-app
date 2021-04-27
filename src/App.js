@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   NavLink
@@ -38,7 +38,7 @@ const Nav = () => (
 
 function App() {
   return (
-    <Router>
+    <Router basename="/tobbl-app/">
     <div className="App">
       <Nav />
       {/* <header className="App-header"> */}
