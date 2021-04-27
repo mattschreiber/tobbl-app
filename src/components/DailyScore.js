@@ -1,6 +1,7 @@
 import React from 'react';
 
 function DailyScore (props) {
+
     return (
         <div className='row mt-5'>
             <div className='col-12'>
@@ -24,10 +25,10 @@ function DailyScore (props) {
                                     {props.props.map((score, i) =>
                                     <tr key={i}>
                                         <td>{score.period}</td>
-                                        <td className={score.team1 > score.team2 ? 'font-weight-bold':undefined }>{score.team1}</td>
-                                        <td className={score.team1 > score.team2 ? 'font-weight-bold':undefined }>{score.score1}</td>
-                                        <td className={score.team2 > score.team1 ? 'font-weight-bold':undefined }>{score.team2}</td>
-                                        <td className={score.team2 > score.team1 ? 'font-weight-bold':undefined }>{score.score2}</td>
+                                        <td className={score.score1 > score.score2 ? 'font-weight-bold':'font-weight-normal' }>{score.team1}</td>
+                                        <td className={score.score1 > score.score2 ? 'font-weight-bold':'font-weight-normal'}>{score.score1}</td>
+                                        <td className={score.score1 < score.score2 ? 'font-weight-bold':'font-weight-normal' }>{score.team2}</td>
+                                        <td className={score.score1 < score.score2 ? 'font-weight-bold':'font-weight-normal' }>{score.score2}</td>
                                     </tr>
                                     )}
                                 </tbody>
