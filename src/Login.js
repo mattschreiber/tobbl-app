@@ -1,13 +1,24 @@
 import React, {useState} from 'react';
+import {useHistory} from 'react-router-dom';
 import './App.css';
 
 function Login() {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
 
+    const email = 'test@test.com';
+    const pWord ="1234";
+
+    let history = useHistory();
+
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(userName, password);
+        if (email === userName && pWord === password) {
+            console.log("login matched");
+            history.push('/');
+        } else {
+            alert("Invalid email or password");
+        }
       }
 
     return (
