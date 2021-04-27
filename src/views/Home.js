@@ -19,7 +19,7 @@ function Home() {
 
     return (
         <div className="container-fluid">
-            <h1 className="text-center">Current Standings</h1>
+            <h1 className="text-center mt-3">Current Standings</h1>
         <div className='row'>
             <div className='col-lg'>
                 <Standings props = {teamObj} division = "Black" />
@@ -29,7 +29,7 @@ function Home() {
             </div>
         </div>
         <div className="row">
-            <div className="mx-auto col-lg-8">
+            <div className="mx-auto col-lg-12">
                 <DailyScore props = {scoreObj} />
             </div>
         </div>
