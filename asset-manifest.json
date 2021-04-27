@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mattschreiber/tobbl-app/static/css/main.b7e0a82d.chunk.css",
+    "main.js": "/mattschreiber/tobbl-app/static/js/main.77e8a512.chunk.js",
+    "main.js.map": "/mattschreiber/tobbl-app/static/js/main.77e8a512.chunk.js.map",
+    "runtime-main.js": "/mattschreiber/tobbl-app/static/js/runtime-main.6b0d7c6c.js",
+    "runtime-main.js.map": "/mattschreiber/tobbl-app/static/js/runtime-main.6b0d7c6c.js.map",
+    "static/js/2.9725b1c9.chunk.js": "/mattschreiber/tobbl-app/static/js/2.9725b1c9.chunk.js",
+    "static/js/2.9725b1c9.chunk.js.map": "/mattschreiber/tobbl-app/static/js/2.9725b1c9.chunk.js.map",
+    "static/js/3.c407ea24.chunk.js": "/mattschreiber/tobbl-app/static/js/3.c407ea24.chunk.js",
+    "static/js/3.c407ea24.chunk.js.map": "/mattschreiber/tobbl-app/static/js/3.c407ea24.chunk.js.map",
+    "index.html": "/mattschreiber/tobbl-app/index.html",
+    "static/css/main.b7e0a82d.chunk.css.map": "/mattschreiber/tobbl-app/static/css/main.b7e0a82d.chunk.css.map",
+    "static/js/2.9725b1c9.chunk.js.LICENSE.txt": "/mattschreiber/tobbl-app/static/js/2.9725b1c9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b0d7c6c.js",
+    "static/js/2.9725b1c9.chunk.js",
+    "static/css/main.b7e0a82d.chunk.css",
+    "static/js/main.77e8a512.chunk.js"
+  ]
+}
