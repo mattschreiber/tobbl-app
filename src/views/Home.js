@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import DailyScore from '../components/DailyScore';
 import Standings from '../components/Standings';
 
-// home page
+// home page (i.e. landing page). Includes 2 standings components and a daily score component
 function Home() {
     const [teamObj] = useState([
         {teamName: 'Naps', teamWins: 5, teamLosses: 2, division: 'Black'}, {teamName: 'Ironmen', teamWins: 6, teamLosses: 1, division: 'Red'}, {teamName: 'Social Zeros', teamWins: 1, teamLosses: 6, division: 'Red'}, {teamName: 'Millionare Row', teamWins: 3, teamLosses: 4, division: 'Red'},

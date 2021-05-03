@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 import '../App.css';
 
+// Componet used to diplay Team standings.
+// props include division and team records
+// example props object ({teamName: 'Naps', teamWins: 5, teamLosses: 2, division: 'Black'}, division = "Red")
 function Standings(props) {
 
     // Used to set color of division name 

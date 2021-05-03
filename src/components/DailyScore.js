@@ -1,5 +1,8 @@
 import React from 'react';
 
+/* This component takes a daily score object passed in as a prop and displays a table with each daily score entry
+   example props object: {period: 1, team1: "Social Zeros", score1: 25, team2: "Ironmen", score2:56}
+*/
 function DailyScore (props) {
 
     return (

@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import React from 'react';
 import {
   HashRouter as Router,
@@ -9,12 +8,12 @@ import {
 import Login from './Login';
 import Home from './views/Home';
 import RecordEntry from './components/RecordEntry';
-// import Standings from './components/Standings';
 import './App.css';
 
+// Navigation component
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">Navbar</a>
+      <a className="navbar-brand" href="/tobbl-app/">Tobbl</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -40,25 +39,9 @@ function App() {
   return (
     <Router basename="/tobbl-app/">
     <div className="App">
+      {/* navigation component */}
       <Nav />
-      {/* <header className="App-header"> */}
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      {/* </header> */}
-
-      {/* <Login />
-      <RecordEntry />
-      <Home /> */}
+      {/* application routes */}
       <Switch>
         <Route exact path="/"><Home /></Route>
         <Route path="/record-entry"><RecordEntry /></Route>

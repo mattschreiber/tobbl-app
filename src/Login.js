@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import './App.css';
 
+// login form component
 function Login() {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
