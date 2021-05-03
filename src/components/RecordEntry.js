@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import DailyScore from './DailyScore';
 
+// Component for entering a new RecordEntry, i.e. a new daily score. This triggers a refresh of the DailyScore component from the handleSubmit function
 function RecordEntry() {
     const [period, setPeriod] = useState('');
     const [team1, setTeam1] = useState('Naps');
@@ -32,13 +33,12 @@ function RecordEntry() {
     return (
         <div className="container-fluid">
         <div className='row'>
-            {/* <div className='col-sm'></div> */}
             <div className='col-sm-6'>
             <form onSubmit={handleSubmit}>
             <div className='form-row'>
                 <div className={'form-group col-lg-6'}>
                     <label htmlFor='period'>Period:</label>
-                    <input required type='text' id='period' className={'form-control'} value={period} onChange={e => setPeriod(e.target.value)} />
+                    <input required type='number' id='period' className={'form-control'} value={period} onChange={e => setPeriod(e.target.value)} />
                 </div>
             </div>
                 <div className='form-row'>
@@ -52,7 +52,7 @@ function RecordEntry() {
                     </div> 
                     <div className={'form-group col-lg-6'}>
                         <label htmlFor='score1'>Score 1:</label>
-                        <input type='text' id='score1' className={'form-control'} value={score1} onChange={e => setScore1(e.target.value)} />
+                        <input type='number' id='score1' className={'form-control'} value={score1} onChange={e => setScore1(e.target.value)} />
                     </div> 
                 </div>
                 <div className='form-row'>
@@ -66,7 +66,7 @@ function RecordEntry() {
                     </div> 
                     <div className={'form-group col-lg-6'}>
                         <label htmlFor='score2'>Score 2</label>
-                        <input type='text' id='score2' className={'form-control'} value={score2} onChange={e => setScore2(e.target.value)} />
+                        <input type='number' id='score2' className={'form-control'} value={score2} onChange={e => setScore2(e.target.value)} />
                     </div> 
                 </div>
                 <div className={'form-group'}>
@@ -77,11 +77,10 @@ function RecordEntry() {
             <div className='col-sm'></div>
         </div>
         <div className="row">
-            {/* <div className="col-lg-3"></div> */}
             <div className="col-lg-6">
+                {/* Daily score component. Will update automatically when an new RecordEntry is submitted */}
                 <DailyScore props = {scoreObj} />
             </div>
-            {/* <div className="col-lg-3"></div> */}
         </div>
         
         </div>
