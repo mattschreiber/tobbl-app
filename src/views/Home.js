@@ -15,8 +15,6 @@ function Home() {
         {period: 1, team1: "Social Zeros", score1: 25, team2: "Ironmen", score2:56}
     ])
 
-    // const [division] = useState('');
-
     return (
         <div className="container-fluid">
             <h1 className="text-center mt-3">Current Standings</h1>
